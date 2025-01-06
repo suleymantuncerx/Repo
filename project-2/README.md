@@ -1,3 +1,0 @@
-# Repo
-
-hazırlanan repo.
