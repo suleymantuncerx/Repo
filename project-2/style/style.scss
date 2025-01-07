@@ -7,7 +7,7 @@
    margin: 0;
 }
 body {
-    font-family: "Poppins", serif;
+   font-family: 'Poppins', serif;
    font-style: normal;
    height: 100vh;
    background-color: #f8f9ff;
@@ -28,14 +28,14 @@ header {
    .navigation-menu {
       width: 665px;
       display: flex;
-      gap: 1.50rem;
+      gap: 1.5rem;
    }
 }
 .btn-text {
    color: #009379;
    background-color: transparent;
    width: 115px;
-    padding: 1.25rem;
+   padding: 1.25rem;
    text-align: center;
    font-weight: 700;
    border: none;
@@ -45,7 +45,7 @@ header {
    color: #009379;
    background-color: #e5f4f2;
    width: 220px;
-  padding: 1.25rem;
+   padding: 1.25rem;
    text-align: center;
    border-radius: 20px;
    border: none;
@@ -68,6 +68,6 @@ header {
 
    img {
       width: auto;
-      height: 25px;
+      height: 22px;
    }
 }
