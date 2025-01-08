@@ -3,19 +3,45 @@
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+AU+SA:wght@100..400&family=Playwrite+IS:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">      <link rel="stylesheet" href="style/style.css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+      <link rel="stylesheet" href="style/style.css" />
       <title>FİGMA CLONE</title>
    </head>
    <body>
-      <header>
-         <section class="logo">
-            <img src="img/Logo2.svg" alt="" />
-         </section>
-         <section class="navigation-menu">
-            <button class="btn-text">Contact</button>
-            <button class="btn-tonal">How it works</button>
-            <button class="btn-filled"><img src="img/rocketLaunc.png" alt="" />Get Started</button>
-         </section>
+      <header class="w-100">
+         <div class="container d-flex justify-content-between align-items-center">
+            <div class="logo d-flex align-items-center">
+               <a href="index.html"> <img src="img/Logo2.svg" alt="" /></a>
+            </div>
+            <div class="toolbar d-flex">
+               <button class="btn-text">Contact</button>
+               <button class="btn-tool">How it works</button>
+               <button class="btn-filled  align-items-center"><img src="img/rocketLaunc.png" alt="" />Get Started</button>
+            </div>
+         </div>
       </header>
+      <section class="home-slider d-flex justify-content-between">
+         <div class="left-column">
+            <div class="custom-container d-flex justify-content-center flex-direction-column">
+               <h1>
+                  Create Engaging <br />
+                  Landing Pages
+               </h1>
+               <p>
+                  Build beautiful landing pages in record time with <a href="#">Anima</a> ’s Landing <br />
+                  Page UI kit for Figma. No code required!
+               </p>
+               <div class="btn d-flex">
+                  <button class="btn-filled d-flex justify-content-center align-items-center"><img src="img/rocketLaunc.png" alt="" />Get Started</button>
+                  <button class="btn-tool">How it works</button>
+               </div>
+            </div>
+         </div>
+         <div class="right-column d-flex justify-content-center align-items-center">
+            <img src="img/Visuals1.png" alt="" />
+         </div>
+      </section>
    </body>
 </html>
