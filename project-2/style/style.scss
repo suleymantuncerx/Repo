@@ -11,35 +11,173 @@ body {
    font-style: normal;
    background-color: #f8f9ff;
 }
+// 1824PX ÜSTÜ PC İÇİN
 
-.justify-content-center {
-   justify-content: center;
+@media (max-width: 1824.9px) {
+   .container {
+      padding: 1rem 6rem;
+      justify-content: space-between;
+   }
+   .home-slider {
+      .custom-container {
+         padding: 5rem 6rem;
+         justify-content: space-between;
+         .left-column {
+            h1 {
+               font-size: 40px;
+            }
+         }
+         .right-column {
+            img {
+               height: 600px;
+            }
+         }
+      }
+   }
+}
+// LAPTOP İÇİN
+@media (max-width: 1550.9px) {
+   .container {
+      padding: 1rem 3rem;
+   }
+   .home-slider {
+      h1 {
+         font-size: 67px;
+      }
+      .custom-container {
+         padding: 5rem 3rem;
+         .right-column {
+            img {
+               height: 500px;
+            }
+         }
+      }
+   }
+}
+// TABLET VE LAPTOP İÇİN
+@media (max-width: 1024.9px) {
+   .container {
+      padding: 1rem 5rem;
+      .btn-text {
+         display: none;
+      }
+      .btn-filled {
+         display: none;
+      }
+   }
+   .home-slider {
+      height: inherit;
+      .custom-container {
+         flex-direction: column;
+         text-align: center;
+         padding: 5rem 5rem;
+
+         .btn {
+            justify-content: center;
+            margin-bottom: 2rem;
+            .btn-tool {
+               display: none;
+            }
+         }
+         .left-column {
+            width: 100%;
+            p {
+               font-size: 15px;
+               br {
+                  display: none;
+               }
+            }
+         }
+
+         .right-column {
+            width: 100%;
+            justify-content: center;
+         }
+      }
+   }
+}
+// TABLET VE TELEFON İÇİN (BİR TABLETTE YAZIDA SIKIŞMA OLDU ONDAN DOLAYI BU YAZILDI)
+
+@media (max-width: 760.9px) {
+   .container {
+      padding: 1rem 1rem;
+   }
+}
+// TABLET VE TELEFON İÇİN
+@media (max-width: 539.9px) {
+   .container {
+      display: flex;
+      justify-content: center;
+      padding: 1rem 1rem;
+      .btn-tool {
+         display: none;
+      }
+   }
+
+   .home-slider {
+      .custom-container {
+         padding: 25px 10px;
+         .left-column {
+            p {
+               font-size: 14px;
+            }
+            h1 {
+               font-size: 38px;
+            }
+         }
+         .right-column {
+            img {
+               height: 350px;
+            }
+         }
+      }
+   }
 }
 
-.d-flex {
-   display: flex;
+// TELEFON İÇİN
+@media (max-width: 430.9px) {
+   .home-slider {
+      .custom-container {
+         padding: 25px 55px;
+         justify-content: center;
+         .btn-filled {
+            padding: 1rem 2rem;
+            font-size: 13px;
+            img {
+               height: 20px;
+            }
+         }
+         .right-column {
+            img {
+               height: 300px;
+            }
+         }
+      }
+   }
 }
 
-.justify-content-between {
-   justify-content: space-between;
+// BAZI TELEFONLARDA YAZILARIN SIKIŞMASI SEBEBİYLE EKSTRA EKLEDİĞİM KOD
+@media (max-width: 399.9px) {
+   .home-slider {
+      .custom-container {
+         padding: 25px 35px;
+      }
+   }
 }
 
-.flex-direction-column {
-   flex-direction: column;
+// BAZI TELEFONLARDA YAZILARIN SIKIŞMASI SEBEBİYLE EKSTRA EKLEDİĞİM KOD
+@media (max-width: 345.9px) {
+   .home-slider {
+      .custom-container {
+         padding: 25px 15px;
+      }
+   }
 }
-
-.w-100 {
-   width: 100%;
-}
-
-.align-items-center {
-   align-items: center;
-}
-
 header {
    width: 100%;
    .container {
-      padding: 1rem 2rem;
+      display: flex;
+
       .logo {
          img {
             height: 35px;
@@ -47,6 +185,7 @@ header {
          }
       }
       .toolbar {
+         display: flex;
          gap: 25px;
       }
    }
@@ -56,7 +195,7 @@ header {
    background-color: rgba(0, 0, 0, 0);
    border: none;
    font-size: 15px;
-   padding: 1rem 3rem;
+   padding: 1rem 2rem;
    color: #009379;
    border-radius: 22px;
    font-weight: 700;
@@ -64,7 +203,7 @@ header {
 
 .btn-tool {
    color: #009379;
-   padding: 1rem 2rem;
+   padding: 1rem 3rem;
    font-size: 15px;
    border: none;
    background-color: #e5f4f2;
@@ -73,15 +212,16 @@ header {
 }
 
 .btn-filled {
-   display: flex;
    background-color: #009379;
    color: #fff;
    padding: 1rem 3rem;
-   font-size: 14px;
+   font-size: 15px;
    gap: 5px;
    border: none;
    border-radius: 19px;
    font-weight: 700;
+   display: flex;
+   align-items: center;
    img {
       height: 25px;
       width: auto;
@@ -90,45 +230,42 @@ header {
 
 .home-slider {
    height: 100%;
-   padding: 6rem 2rem;
-   .left-column {
-      width: 70%;
-      .custom-container {
-         height: 100%;
-      }
-      h1 {
-         font-size: 67px;
-         margin-bottom: 1rem;
-         color: #2d2d2d;
-         font-weight: 700;
-      }
-      p {
-         font-weight: 500;
-         font-size: 19px;
-         margin-bottom: 2rem;
-         font-weight: 400;
+   .custom-container {
+      display: flex;
+      align-items: center;
+      .left-column {
+         flex-direction: column;
+         h1 {
+            margin-bottom: 1rem;
+            font-weight: 700;
+            color: #2d2d2d;
+         }
+
+         p {
+            margin-bottom: 2rem;
+            font-weight: 400;
+         }
          a {
             text-decoration: none;
          }
-      }
-      .btn {
-         gap: 25px;
-         .btn-tool {
-            padding: 1rem 3.25rem;
-            background-color: #ffffff;
-            border: 2px solid #009379;
+
+         .btn {
+            display: flex;
+            gap: 25px;
+            .btn-tool {
+               background: #fff;
+               border: 2px solid #009379;
+               padding: 1rem 3rem;
+            }
          }
-         .btn-filled {
-            padding: 1rem 3rem;
-         }
       }
-   }
-   .right-column {
-      width: 45%;
-      img {
-         position: relative;
-         width: auto;
-         height: 500px;
+      .right-column {
+         display: flex;
+
+         img {
+            position: relative;
+            width: auto;
+         }
       }
    }
 }
