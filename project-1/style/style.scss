@@ -163,3 +163,27 @@ body {
       width: 30%;
    }
 }
+@media (max-width: 2300px) {
+   padding: 5rem 5rem;
+   max-width: 2140px;
+}
+@media (max-width: 1224.9px) {
+   padding: 1rem 3rem;
+   max-width: 1140px;
+}
+@media (max-width: 1024.9px) {
+   padding: 1rem 3rem;
+   max-width: 980px;
+}
+@media (max-width: 769.9px) {
+   padding: 1rem 3rem;
+   max-width: 960px;
+}
+@media (max-width: 539.9px) {
+   padding: 1rem 3rem;
+   max-width: 960px;
+}
+@media (max-width: 319.9px) {
+   padding: 1rem 3rem;
+   max-width: 960px;
+}
