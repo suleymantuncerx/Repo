@@ -162,3 +162,45 @@ body {
         width: 30%
     }
 }
+@media (max-width: 1824.9px) {
+      padding: 3rem 15rem;
+      max-width: 1740px;
+   }
+   @media (max-width: 1700.9px) {
+      padding: 3rem 9rem;
+      max-width: 1660px;
+   }
+   @media (max-width: 1224.9px) {
+      padding: 2rem 3rem;
+      max-width: 1180px;    
+   }
+
+   @media (max-width: 1083.9px) {
+      padding: 2rem 4rem;
+      max-width: 980px;
+   }
+
+   @media (max-width: 992.9px) {
+      max-width: 940px;
+   }
+   @media (max-width: 704.9px) {
+      max-width: 680px;
+      justify-content: center;
+   }
+   @media (max-width: 679.9px) {
+      max-width: 640px;
+   }
+   @media (max-width: 639.9px) {
+      max-width: 620px;
+   }
+   @media (max-width: 579.9px) {
+      max-width: 540px;
+   }
+   @media (max-width: 439.9px) {
+      max-width: 420px;
+      padding: 1rem 1rem;
+   }
+   @media (max-width: 329.9px) {
+      max-width: 290px;
+   }
+}
