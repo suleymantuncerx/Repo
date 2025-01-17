@@ -12,25 +12,28 @@ body {
    font-style: normal;
    background-color: #f8f9ff;
 }
-header {
-   display: flex;
-   justify-content: center;
+.container {
+   max-width: 1200px;
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
 
-   .logo {
-      align-items: center;
-      display: flex;
+   @media (max-width: 1200px) {
+      max-width: 1140px;
    }
-   .navbar {
-      display: flex;
-      justify-content: center;
-      gap: 19rem;
+   @media (max-width: 769px) {
+      max-width: 740px;
    }
-   .toolbar {
-      display: flex;
-      gap: 25px;
+   @media (max-width: 599px) {
+      max-width: 570px;
+   }
+   @media (max-width: 459px) {
+      max-width: 420px;
+   }
+   @media (max-width: 389px) {
+      max-width: 340px;
    }
 }
-
 .btn-text {
    color: #009379;
    border: none;
@@ -65,22 +68,86 @@ header {
       width: auto;
    }
 }
+header {
+   display: flex;
+   justify-content: center;
+
+   .logo {
+      align-items: center;
+      display: flex;
+   }
+   .navbar {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem 0rem;
+      .btn-tool {
+         @media (max-width: 599px) {
+            display: none;
+         }
+      }
+      @media (max-width: 1024px) {
+         justify-content: space-around;
+      }
+      @media (max-width: 599px) {
+         justify-content: center;
+      }
+   }
+   .toolbar {
+      display: flex;
+      gap: 25px;
+      .btn-text {
+         @media (max-width: 1024px) {
+            display: none;
+         }
+      }
+      .btn-filled {
+         @media (max-width: 1024px) {
+            display: none;
+         }
+      }
+   }
+}
+
 .home-slider {
+   padding: 4rem 0;
+
    .midle {
       display: flex;
-      padding: 4rem 0;
+      @media (max-width: 1024px) {
+         flex-direction: column;
+      }
    }
    .left-column {
       width: 60%;
+      display: flex;
+      flex-direction: column;
+      @media (max-width: 1024px) {
+         width: 100%;
+         text-align: center;
+      }
       h1 {
          font-size: 67px;
          font-weight: 700;
          margin-bottom: 1rem;
+         @media (max-width: 459px) {
+            font-size: 50px;
+         }
+         @media (max-width: 389px) {
+            font-size: 42px;
+         }
       }
       p {
          font-size: 21px;
          font-weight: 400;
          margin-bottom: 2rem;
+         @media (max-width: 769px) {
+            br {
+               display: none;
+            }
+         }
+         @media (max-width: 389px) {
+            font-size: 15px;
+         }
          a {
             text-decoration: none;
             color: #005eff;
@@ -90,15 +157,32 @@ header {
    .btn {
       display: flex;
       gap: 25px;
+
+      @media (max-width: 1024px) {
+         margin-bottom: 2rem;
+         margin-left: auto;
+         margin-right: auto;
+      }
+      .btn-tool {
+         @media (max-width: 1024px) {
+            display: none;
+         }
+      }
    }
    .right-column {
       width: 40%;
+      @media (max-width: 1024px) {
+         width: 100%;
+      }
       display: flex;
       justify-content: center;
       align-items: center;
       img {
          height: 400px;
          width: auto;
+         @media (max-width: 389px) {
+            height: 300px;
+         }
       }
    }
 }
@@ -107,20 +191,149 @@ hr {
    border: 1px solid #d8d8d8;
 }
 .section-2 {
+   margin-bottom: 8rem;
    .image {
       gap: 6rem;
       display: flex;
       padding: 2rem 0;
+      @media (max-width: 1200px) {
+         gap: 5rem;
+      }
+      @media (max-width: 1024px) {
+         gap: 3rem;
+         justify-content: center;
+      }
+      @media (max-width: 769px) {
+         gap: 2rem;
+      }
+      @media (max-width: 599px) {
+         gap: 3rem;
+         flex-wrap: wrap;
+      }
+      @media (max-width: 389px) {
+         gap: 1.5rem;
+      }
+
       img {
          height: 35px;
          width: auto;
+         @media (max-width: 1200px) {
+            height: 32px;
+         }
+         @media (max-width: 1024px) {
+            height: 26px;
+         }
+         @media (max-width: 769px) {
+            height: 23px;
+         }
+
+         @media (max-width: 599px) {
+            height: 31px;
+         }
+         @media (max-width: 459px) {
+            height: 25px;
+         }
+         @media (max-width: 389px) {
+            height: 23px;
+         }
       }
    }
 }
-.container {
-   max-width: 1200px;
-   width: 100%;
-   margin-left: auto;
-   margin-right: auto;
-   padding: 1rem 3rem;
+
+.section-3 {
+   .title {
+      text-align: center;
+
+      h1 {
+         font-size: 38px;
+         font-weight: 700;
+         margin-bottom: 1rem;
+         color: #2d2d2d;
+      }
+      p {
+         font-size: 16px;
+         font-weight: 400;
+         margin-bottom: 4rem;
+         color: #2d2d2d;
+      }
+   }
+
+   .swiper-wrapper {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+
+      @media (max-width: 1024px) {
+         flex-direction: column;
+         padding: 1rem 4rem;
+      }
+      @media (max-width: 459px) {
+         padding: 1rem 1rem;
+      }
+
+      .card {
+         background-color: #ffffff;
+         border: 1px solid #e5f4f2;
+         align-items: center;
+         display: flex;
+         flex-direction: column;
+         padding: 2rem 2rem;
+         text-align: center;
+         border-radius: 20px;
+         @media (max-width: 1024px) {
+            padding: 2rem 10rem;
+         }
+         @media (max-width: 769px) {
+            padding: 2rem 2rem;
+         }
+         @media (max-width: 599px) {
+            padding: 2rem 5rem;
+         }
+         @media (max-width: 459px) {
+            padding: 2rem 1rem;
+         }
+         @media (max-width: 389px) {
+            padding: 2rem 0;
+         }
+         .card-header {
+            margin-bottom: 2rem;
+
+            img {
+               height: auto;
+               width: 70px;
+            }
+         }
+
+         .card-body {
+            h3 {
+               margin-bottom: 1rem;
+               font-size: 25px;
+               font-weight: 600;
+               color: #2d2d2d;
+               @media (max-width: 389px) {
+                  font-size: 20px;
+               }
+            }
+            p {
+               font-size: 16px;
+               font-weight: 400;
+               color: #2d2d2d;
+               @media (max-width: 389px) {
+                  font-size: 12px;
+               }
+            }
+         }
+         .btn-filled {
+            background-color: transparent;
+            color: #009379;
+            font-size: 16px;
+            padding: 1rem 1rem;
+
+            img {
+               height: 20px;
+               width: auto;
+            }
+         }
+      }
+   }
 }
