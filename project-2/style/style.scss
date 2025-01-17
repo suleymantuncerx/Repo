@@ -12,11 +12,30 @@ body {
    font-style: normal;
    background-color: #f8f9ff;
 }
+.justify-center {
+   justify-content: center;
+}
+.align-items-center {
+   align-items: center;
+}
+.d-flex {
+   display: flex;
+}
+.m-l {
+   margin-left: auto;
+}
+.m-r {
+   margin-right: auto;
+}
+.flex-column {
+   flex-direction: column;
+}
+.text-center {
+   text-align: center;
+}
 .container {
    max-width: 1200px;
    width: 100%;
-   margin-left: auto;
-   margin-right: auto;
 
    @media (max-width: 1200px) {
       max-width: 1140px;
@@ -57,8 +76,6 @@ body {
 
 .btn-filled {
    color: #fff;
-   display: flex;
-   align-items: center;
    background-color: #009379;
    border: none;
    font-size: 15px;
@@ -74,13 +91,7 @@ body {
 header {
    display: flex;
    justify-content: center;
-
-   .logo {
-      align-items: center;
-      display: flex;
-   }
    .navbar {
-      display: flex;
       justify-content: space-between;
       padding: 1rem 0rem;
       .btn-tool {
@@ -96,7 +107,6 @@ header {
       }
    }
    .toolbar {
-      display: flex;
       gap: 25px;
       .btn-text {
          @media (max-width: 1024px) {
@@ -115,15 +125,12 @@ header {
    padding: 4rem 0;
 
    .midle {
-      display: flex;
       @media (max-width: 1024px) {
          flex-direction: column;
       }
    }
    .left-column {
       width: 60%;
-      display: flex;
-      flex-direction: column;
       @media (max-width: 1024px) {
          width: 100%;
          text-align: center;
@@ -158,9 +165,7 @@ header {
       }
    }
    .btn {
-      display: flex;
       gap: 25px;
-
       @media (max-width: 1024px) {
          margin-bottom: 2rem;
          margin-left: auto;
@@ -177,9 +182,6 @@ header {
       @media (max-width: 1024px) {
          width: 100%;
       }
-      display: flex;
-      justify-content: center;
-      align-items: center;
       img {
          height: 400px;
          width: auto;
@@ -197,7 +199,6 @@ hr {
    margin-bottom: 8rem;
    .image {
       gap: 6rem;
-      display: flex;
       padding: 2rem 0;
       @media (max-width: 1200px) {
          gap: 5rem;
@@ -245,8 +246,6 @@ hr {
 
 .section-3 {
    .title {
-      text-align: center;
-
       h1 {
          font-size: 38px;
          font-weight: 700;
@@ -262,8 +261,6 @@ hr {
    }
 
    .swiper-wrapper {
-      display: flex;
-      justify-content: center;
       gap: 25px;
 
       @media (max-width: 1024px) {
@@ -277,11 +274,7 @@ hr {
       .card {
          background-color: #ffffff;
          border: 1px solid #e5f4f2;
-         align-items: center;
-         display: flex;
-         flex-direction: column;
          padding: 2rem 2rem;
-         text-align: center;
          border-radius: 20px;
          @media (max-width: 1024px) {
             padding: 2rem 10rem;
