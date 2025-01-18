@@ -340,6 +340,9 @@ hr {
          @media (max-width: 1024.9px) {
             padding: 2rem 10rem;
          }
+         @media (max-width: 769.9px) {
+                padding: 2rem 6rem;
+         }
          @media (max-width: 549.9px) {
             padding: 2rem 3rem;
          }
@@ -382,4 +385,3 @@ hr {
       }
    }
 }
-
