@@ -1,3 +1,23 @@
+// @import url('./variables/index.scss');
+
+$border-radius: 20px;
+
+// colors
+$font-color: #009379;
+$text-color: #2d2d2d;
+
+//FONT SİZE
+$font-size-button: 15px;
+$font-size-p: 16px;
+$font-size-title: 38px;
+
+//FONT WEİGHT
+$font-weight-button: 500;
+$font-weight-p: 400;
+$font-weight-title: 700;
+
+
+
 *::after,
 *::before {
    box-sizing: border-box;
@@ -6,7 +26,6 @@
    padding: 0;
    margin: 0;
 }
-
 body {
    font-family: 'Poppins', serif;
    background-color: #f8f9ff;
@@ -20,7 +39,6 @@ body {
 .d-flex {
    display: flex;
 }
-
 .flex-column {
    flex-direction: column;
 }
@@ -28,7 +46,7 @@ body {
    text-align: center;
 }
 .container {
-   max-width: 1200px;
+   max-width: 1100px;
    width: 100%;
    margin-left: auto;
    margin-right: auto;
@@ -39,13 +57,15 @@ body {
    }
 }
 .btn-text {
-   color: #009379;
+   color: $font-color;
    border: none;
-   font-size: 15px;
-   border-radius: 20px;
+   font-size: $font-size-button;
+   border-radius: $border-radius;
    padding: 1rem 2rem;
    background: transparent;
    font-family: 'Poppins', serif;
+   font-weight: $font-weight-button;
+   cursor: pointer;
    @media (max-width: 1199.9px) {
       padding: 1rem 2rem;
       font-size: 13px;
@@ -54,15 +74,28 @@ body {
       display: none;
    }
 }
-
+a {
+   text-decoration: none;
+   color: $font-color;
+}
+.btn-text:hover {
+   opacity: 1;
+   background-color: #e5f4f2;
+}
+.btn-text:active {
+   background-color: $font-color;
+}
 .btn-tool {
-   color: #009379;
+   color: $font-color;
    border: none;
-   font-size: 15px;
-   border-radius: 20px;
+   font-size: $font-size-button;
+   border-radius: $border-radius;
    padding: 1rem 2rem;
    background-color: #e5f4f2;
    font-family: 'Poppins', serif;
+   font-weight: $font-weight-button;
+   cursor: pointer;
+   text-decoration: none;
    @media (max-width: 1199.9px) {
       padding: 1rem 2rem;
       font-size: 13px;
@@ -74,20 +107,29 @@ body {
    @media (max-width: 769.9px) {
       display: none;
    }
-   @media (max-width: 549.9px) {
-      display: none;
+   a {
+      color: $font-color;
+   }
+   &:hover {
+      opacity: 1;
+      background-color: #d2d4d4;
+   }
+   &:active {
+      opacity: 1;
+      background-color: #767676;
    }
 }
-
 .btn-filled {
    color: #fff;
-   background-color: #009379;
+   background-color: $font-color;
    border: none;
-   font-size: 15px;
-   border-radius: 20px;
+   font-size: $font-size-button;
+   border-radius: $border-radius;
    padding: 1rem 2rem;
    font-family: 'Poppins', serif;
    gap: 10px;
+   font-weight: $font-weight-button;
+   cursor: pointer;
    @media (max-width: 1199.9px) {
       padding: 1rem 2rem;
       font-size: 13px;
@@ -107,6 +149,20 @@ body {
    }
    @media (max-width: 379.9px) {
       padding: 0.5rem 0.6rem;
+   }
+   a {
+      text-decoration: none;
+      color: #fff;
+      align-items: center;
+      display: flex;
+   }
+   &:hover {
+      opacity: 1;
+      background-color: #d2d4d4;
+   }
+   &:active {
+      opacity: 1;
+      background-color: $font-color;
    }
    img {
       height: 25px;
@@ -170,9 +226,9 @@ header {
          }
          h1 {
             font-size: 67px;
-            font-weight: 700;
+            font-weight: $font-weight-title;
             margin-bottom: 1rem;
-            color: #2d2d2d;
+            color: $text-color;
             @media (max-width: 1199.9px) {
                font-size: 60px;
             }
@@ -185,11 +241,11 @@ header {
          }
          p {
             font-size: 21px;
-            font-weight: 400;
+            font-weight: $font-weight-p;
             margin-bottom: 2rem;
-            color: #2d2d2d;
+            color: $text-color;
             @media (max-width: 1199.9px) {
-               font-size: 16px;
+               font-size: $font-size-p;
             }
             @media (max-width: 549.9px) {
                font-size: 13px;
@@ -239,7 +295,6 @@ header {
       }
    }
 }
-
 hr {
    display: flex;
    border: 1px solid #d8d8d8;
@@ -254,56 +309,55 @@ hr {
    }
    .image {
       padding: 4rem 0 4rem 0;
-      display: flex;
-      justify-content: center;
-      gap: 8rem;
-
-      @media (max-width: 1199.9px) {
-         gap: 5.5rem;
-      }
-      @media (max-width: 1024.9px) {
-         padding: 3rem 0 3rem 0;
-         gap: 3rem;
-      }
-
-      @media (max-width: 769.9px) {
-         gap: 1.5rem;
-      }
+      overflow-y: hidden;
+      overflow-x: auto;
+      gap: 20rem;
+      max-width: 100%;
       @media (max-width: 659.9px) {
-         gap: 0.75rem;
-      }
-      @media (max-width: 549.9px) {
+         overflow-x: hidden;
+         overflow-y: auto;
          flex-wrap: wrap;
-         gap: 4rem;
+         gap: 5rem;
+         max-height: 100px;
       }
       @media (max-width: 439.9px) {
          gap: 2.5rem;
       }
-      @media (max-width: 379.9px) {
-         gap: 1.5rem;
-      }
-
       img {
-         height: 23px;
+         height: 35px;
          width: auto;
          @media (max-width: 1199.9px) {
             height: 27px;
          }
+         @media (max-width: 991.9px) {
+            height: 23px;
+         }
          @media (max-width: 769.9px) {
             height: 25px;
          }
-         @media (max-width: 991.9px) {
-            height: 23px;
+         @media (max-width: 659.9px) {
+            height: 30px;
          }
          @media (max-width: 379.9px) {
             height: 20px;
          }
       }
    }
+   ::-webkit-scrollbar-track {
+      -webkit-box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+      background-color: #f5f5f5;
+   }
+   ::-webkit-scrollbar {
+      background-color: transparent;
+   }
+   ::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background-color: $font-color;
+   }
 }
-
 .section-3 {
-   padding: 4rem 0 4rem 0;
+   padding: 7rem 0 7rem 0;
    @media (max-width: 1024.9px) {
       padding: 6rem 0 6rem 0;
    }
@@ -316,15 +370,15 @@ hr {
    .title {
       h1 {
          font-size: 38px;
-         font-weight: 700;
+         font-weight: $font-weight-title;
          margin-bottom: 1rem;
-         color: #2d2d2d;
+         color: $text-color;
       }
       p {
-         font-size: 16px;
-         font-weight: 400;
+         font-size: $font-size-p;
+         font-weight: $font-weight-p;
          margin-bottom: 4rem;
-         color: #2d2d2d;
+         color: $text-color;
       }
    }
    .swiper-wrapper {
@@ -336,12 +390,12 @@ hr {
          background-color: #ffffff;
          border: 1px solid #e5f4f2;
          padding: 2rem 2rem;
-         border-radius: 20px;
+         border-radius: $border-radius;
          @media (max-width: 1024.9px) {
             padding: 2rem 10rem;
          }
          @media (max-width: 769.9px) {
-                padding: 2rem 6rem;
+            padding: 2rem 6rem;
          }
          @media (max-width: 549.9px) {
             padding: 2rem 3rem;
@@ -351,32 +405,41 @@ hr {
          }
          .card-header {
             margin-bottom: 2rem;
-
             img {
                height: auto;
                width: 70px;
             }
          }
-
          .card-body {
             h3 {
                margin-bottom: 1rem;
                font-size: 25px;
-               font-weight: 600;
-               color: #2d2d2d;
+               font-weight: $font-weight-title;
+               color: $text-color;
             }
             p {
-               font-size: 16px;
-               font-weight: 400;
-               color: #2d2d2d;
+               font-size: $font-size-p;
+               font-weight: $font-weight-p;
+               color: $text-color;
             }
          }
          .btn-filled {
             background-color: transparent;
-            color: #009379;
-            font-size: 16px;
+            color: $font-color;
+            font-size: $font-size-p;
             padding: 1rem 1rem;
-
+            &:hover {
+               background-color: #d2d4d4;
+            }
+            &:active {
+               background-color: $font-color;
+            }
+            a {
+               text-decoration: none;
+               color: $font-color;
+               display: flex;
+               gap: 10px;
+            }
             img {
                height: 20px;
                width: auto;
