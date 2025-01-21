@@ -102,14 +102,6 @@ p {
    cursor: pointer;
    padding: 1rem 2rem;
    text-decoration: none;
-   &:hover {
-      opacity: 1;
-      background-color: #d2d4d4;
-   }
-   &:active {
-      opacity: 1;
-      background-color: #767676;
-   }
    @media (max-width: 991.9px) {
       display: none;
    }
@@ -117,14 +109,6 @@ p {
 .btn-tool {
    background-color: #e5f4f2;
    padding: 1rem 2rem;
-   &:hover {
-      opacity: 1;
-      background-color: #d2d4d4;
-   }
-   &:active {
-      opacity: 1;
-      background-color: #767676;
-   }
    @media (max-width: 991.9px) {
       padding: 1rem 1.5rem;
       font-size: 12px;
@@ -179,7 +163,6 @@ p {
       }
    }
 }
-
 header {
    display: flex;
    justify-content: center;
