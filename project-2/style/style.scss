@@ -12,6 +12,7 @@ $font-size-button: 15px;
 $font-size-p: 12px;
 $font-size-title: 38px;
 
+$font-size-h3: 30px;
 //FONT WEİGHT
 $font-weight-button: 500;
 $font-weight-p: 400;
@@ -79,6 +80,9 @@ h1 {
    font-weight: $font-weight-title;
    color: $text-color;
    margin-bottom: $margin-bottom;
+   @media (max-width: 449.9px) {
+      font-size: 20px;
+   }
 }
 p {
    font-size: $font-size-p;
@@ -163,6 +167,15 @@ p {
       }
    }
 }
+.section-3,
+.section-4,
+.section-6,
+.section-7,
+.section-8 {
+   .card {
+      filter: drop-shadow(2px 2px 2px #3366ff0d);
+   }
+}
 header {
    display: flex;
    justify-content: center;
@@ -188,7 +201,17 @@ header {
    }
 }
 .home-slider {
-   padding: 2rem 0 1rem 0;
+   padding: 9rem 0 9rem 0;
+   @media (max-width: 991.9px) {
+      padding: 4rem 0 3rem 0;
+   }
+   @media (max-width: 549.9px) {
+      padding: 2rem 0 1rem 0;
+   }
+   @media (max-width: 449.9px) {
+      padding: 1rem 0 1rem 0;
+   }
+
    .midle {
       @media (max-width: 1024.9px) {
          flex-direction: column;
@@ -202,14 +225,11 @@ header {
          }
          h1 {
             font-size: 67px;
-            @media (max-width: 1199.9px) {
-               font-size: 60px;
-            }
             @media (max-width: 549.9px) {
-               font-size: 55px;
+               font-size: 35px;
             }
-            @media (max-width: 439.9px) {
-               font-size: 40px;
+            @media (max-width: 449.9px) {
+               font-size: 20px;
             }
          }
          p {
@@ -217,8 +237,9 @@ header {
             @media (max-width: 1199.9px) {
                font-size: $font-size-p;
             }
-            @media (max-width: 439.9px) {
-               font-size: 15px;
+
+            @media (max-width: 449.9px) {
+               font-size: 10px;
                br {
                   display: none;
                }
@@ -267,7 +288,17 @@ hr {
    border: 1px solid #d8d8d8;
 }
 .section-2 {
-   padding: 2rem 0;
+   padding: 3rem 0 4rem 0;
+   @media (max-width: 991.9px) {
+      padding: 4rem 0 3rem 0;
+   }
+   @media (max-width: 549.9px) {
+      padding: 3rem 0 3rem 0;
+   }
+   @media (max-width: 449.9px) {
+      padding: 2rem 0 2rem 0;
+   }
+
    .image {
       padding: 3rem 0 3rem 0;
       gap: 6rem;
@@ -316,10 +347,22 @@ hr {
    }
 }
 .section-3 {
-   padding: 2rem 0;
+   padding: 4rem 0 4rem 0;
+   @media (max-width: 991.9px) {
+      padding: 5rem 0 3rem 0;
+   }
+   @media (max-width: 549.9px) {
+      padding: 1rem 0 2rem 0;
+   }
+   @media (max-width: 449.9px) {
+      padding: 3rem 0 2rem 0;
+   }
    .title {
       p {
          margin-bottom: 4rem;
+         @media (max-width: 449.9px) {
+            margin-bottom: 2rem;
+         }
       }
    }
    .swiper-wrapper {
@@ -341,7 +384,7 @@ hr {
          @media (max-width: 549.9px) {
             padding: 2rem 3rem;
          }
-         @media (max-width: 379.9px) {
+         @media (max-width: 449.9px) {
             padding: 2rem 0.25rem;
          }
          .card-header {
@@ -357,6 +400,15 @@ hr {
                font-size: 25px;
                font-weight: $font-weight-title;
                color: $text-color;
+               @media (max-width: 449.9px) {
+                  font-size: 20px;
+               }
+            }
+            p {
+               @media (max-width: 449.9px) {
+                  font-size: 10px;
+                  margin-bottom: inherit;
+               }
             }
          }
 
@@ -388,26 +440,22 @@ hr {
    }
 }
 .section-4 {
-   padding: 2rem 0;
+   padding: 5rem 0 4rem 0;
+   @media (max-width: 991.9px) {
+      padding: 6rem 0 3rem 0;
+   }
+   @media (max-width: 549.9px) {
+      padding: 3rem 0 1rem 0;
+   }
+   @media (max-width: 449.9px) {
+      padding: 2rem 0 2rem 0;
+   }
    .title {
-      h1 {
-         @media (max-width: 549.9px) {
-            font-size: 50px;
-         }
-         @media (max-width: 379.9px) {
-            font-size: 45px;
-         }
-      }
       p {
          margin-bottom: 3rem;
-         @media (max-width: 1024.9px) {
-            font-size: 14px;
-         }
-         @media (max-width: 549.9px) {
-            font-size: 23px;
-         }
-         @media (max-width: 379.9px) {
-            font-size: 17px;
+         @media (max-width: 449.9px) {
+            font-size: 10px;
+            margin-bottom: 1rem;
          }
       }
    }
@@ -422,50 +470,42 @@ hr {
          padding: 2rem 4rem;
          border-top-left-radius: $border-radius;
          border-top-right-radius: $border-radius;
+         width: 25%;
          @media (max-width: 1024.9px) {
-            padding: 2rem 0;
-            width: 25%;
-         }
-         @media (max-width: 767.9px) {
             padding: 1rem 0;
          }
          @media (max-width: 991.9px) {
-            width: 43%;
-         }
-         @media (max-width: 549.9px) {
-            width: 46%;
-         }
-         @media (max-width: 359.9px) {
-            width: 42%;
+            width: 40%;
          }
          h3 {
-            font-size: $font-size-title;
+            font-size: $font-size-h3;
             font-weight: $font-weight-title;
             color: $text-color;
             margin-bottom: 0.5rem;
-            @media (max-width: 1024.9px) {
-               font-size: 35px;
-            }
-            @media (max-width: 991.9px) {
-               font-size: 30px;
-            }
-            @media (max-width: 379.9px) {
-               font-size: 27px;
+            @media (max-width: 449.9px) {
+               font-size: 20px;
             }
          }
          p {
-            @media (max-width: 1024.9px) {
-               font-size: 14px;
-            }
-            @media (max-width: 379.9px) {
-               font-size: 11px;
+            @media (max-width: 449.9px) {
+               font-size: 10px;
             }
          }
       }
    }
 }
 .section-5 {
-   padding: 2rem 0;
+   padding: 6rem 0 5rem 0;
+
+   @media (max-width: 991.9px) {
+      padding: 5rem 0 3rem 0;
+   }
+   @media (max-width: 549.9px) {
+      padding: 5rem 0 1rem 0;
+   }
+   @media (max-width: 449.9px) {
+      padding: 2rem 0 2rem 0;
+   }
    .swiper-wrapper {
       @media (max-width: 549.9px) {
          flex-direction: column;
@@ -509,8 +549,8 @@ hr {
             @media (max-width: 549.9px) {
                font-size: 35px;
             }
-            @media (max-width: 379.9px) {
-               font-size: 30px;
+            @media (max-width: 449.9px) {
+               font-size: 20px;
             }
          }
          p {
@@ -525,8 +565,9 @@ hr {
             @media (max-width: 769.9px) {
                font-size: 13px;
             }
-            @media (max-width: 549.9px) {
-               font-size: 15px;
+            @media (max-width: 449.9px) {
+               font-size: 10px;
+               margin-bottom: 1rem;
             }
          }
 
@@ -540,11 +581,30 @@ hr {
    }
 }
 .section-6 {
-   padding: 2rem 0;
+   padding: 5rem 0 5rem 0;
+   @media (max-width: 991.9px) {
+      padding: 5rem 0 3rem 0;
+   }
+   @media (max-width: 549.9px) {
+      padding: 5rem 0 1rem 0;
+   }
+   @media (max-width: 449.9px) {
+      padding: 2rem 0 2rem 0;
+   }
    .title {
+      h1 {
+         @media (max-width: 449.9px) {
+            font-size: 20px;
+         }
+      }
+
       p {
          font-size: 21px;
          margin-bottom: 3rem;
+         @media (max-width: 449.9px) {
+            font-size: 10px;
+            margin-bottom: 1rem;
+         }
       }
    }
    .swiper-wrapper {
@@ -598,15 +658,28 @@ hr {
    }
 }
 .section-7 {
-   padding: 2rem 0;
+   padding: 5rem 0 5rem 0;
+   @media (max-width: 991.9px) {
+      padding: 6rem 0 3rem 0;
+   }
+   @media (max-width: 549.9px) {
+      padding: 5rem 0 1rem 0;
+   }
+   @media (max-width: 449.9px) {
+      padding: 3rem 0 1rem 0;
+   }
+
    .title {
       p {
          margin-bottom: 2rem;
+         @media (max-width: 449.9px) {
+            margin-bottom: 1rem;
+         }
       }
    }
    .swiper-wrapper {
       gap: 25px;
-      justify-content: space-between;
+      justify-content: center;
       @media (max-width: 991.9px) {
          flex-direction: column;
       }
@@ -615,6 +688,13 @@ hr {
          border: 1px solid #f8f9ff;
          border-radius: $border-radius;
          padding: 3rem 3rem;
+         width: 25%;
+         @media (max-width: 991.9px) {
+            width: inherit;
+         }
+         @media (max-width: 449.9px) {
+            padding: 3rem 2rem;
+         }
          .card-header {
             h1 {
                font-size: 50px;
@@ -633,6 +713,11 @@ hr {
                   @media (max-width: 1199.9px) {
                      font-size: 12px;
                   }
+               }
+            }
+            p {
+               @media (max-width: 1099.9px) {
+                  font-size: 10px;
                }
             }
          }
@@ -663,10 +748,10 @@ hr {
             }
             .btn-1 {
                .btn-filled {
-                  padding: 1rem 1rem;
+                  padding: 1rem 0.5rem;
                   background-color: $colors;
                   img {
-                     height: 15px;
+                     height: 14px;
                   }
                   &:hover {
                      opacity: 1;
@@ -683,12 +768,37 @@ hr {
    }
 }
 .section-8 {
-   padding: 2rem 0;
+   padding: 6rem 0 3rem 0;
+   @media (max-width: 991.9px) {
+      padding: 6rem 0 3rem 0;
+   }
+   @media (max-width: 549.9px) {
+      padding: 5rem 0 1rem 0;
+   }
+   @media (max-width: 449.9px) {
+      padding: 3rem 0 1rem 0;
+   }
+   .title {
+      text-align: center;
+      h1 {
+         @media (max-width: 449.9px) {
+            font-size: 20px;
+         }
+      }
+      p {
+         margin-bottom: 2rem;
+         @media (max-width: 449.9px) {
+            font-size: 10px;
+            margin-bottom: 1rem;
+         }
+      }
+   }
    .swiper-wrapper {
       gap: 25px;
       @media (max-width: 419.9px) {
          flex-direction: column;
       }
+
       .card {
          background-color: $colors;
          border-radius: $border-radius;
@@ -734,7 +844,14 @@ hr {
    }
 }
 .section-9 {
-   padding: 2rem 0;
+   padding: 5rem 0 3rem 0;
+   @media (max-width: 991.9px) {
+      padding: 5rem 0 3rem 0;
+   }
+   @media (max-width: 549.9px) {
+      padding: 3rem 0 1rem 0;
+   }
+
    .swipper-wrapper {
       background-color: #f2bfaf;
       border-radius: $border-radius;
@@ -768,22 +885,23 @@ hr {
    }
 }
 .section-10 {
-   padding: 2rem 0;
+   padding: 1rem 0 1rem 0;
    .swipper-wrapper {
       background-color: $colors;
       padding: 1rem 3rem;
       border-radius: $border-radius;
+      border: 1px solid #e5f4f2;
       .title {
          h1 {
-            font-size: 38px;
-            @media (max-width: 991.9px) {
-               font-size: 32px;
+            @media (max-width: 379.9px) {
+               font-size: 20px;
             }
          }
          p {
             margin-bottom: 3rem;
-            @media (max-width: 991.9px) {
-               font-size: 13px;
+            @media (max-width: 379.9px) {
+               font-size: 10px;
+               margin-bottom: 1.5rem;
             }
          }
       }
@@ -901,7 +1019,7 @@ hr {
 footer {
    background-color: $text-color;
    .footer_copyright {
-      padding: 1rem 0;
+      padding: 1.5rem 0;
       justify-content: space-between;
       @media (max-width: 549.9px) {
          flex-direction: column;
