@@ -91,7 +91,7 @@ p {
    margin-bottom: $margin-bottom;
 }
 .container {
-   max-width: 1100px;
+   max-width: 1000px;
    width: 100%;
    margin-left: auto;
    margin-right: auto;
@@ -284,19 +284,18 @@ header {
    }
 }
 .section-2 {
-   .swiper {
-      padding: 10rem 0 0 0;
-      .swiper-slide {
-         display: flex;
-         justify-content: center;
-         padding: 3rem 0;
-         img {
-            width: auto;
-            height: 25px;
-         }
+  
+   .swiper-slide {
+      display: flex;
+      justify-content: center;
+      padding: 3rem 0;
+      img {
+         width: auto;
+         height: 20px;
       }
    }
 }
+
 // padding: 3rem 0 5rem 0;
 // @media (max-width: 991.9px) {
 //    padding: 4rem 0 3rem 0;
@@ -354,7 +353,6 @@ header {
 //    border-radius: 10px;
 //    background-color: $font-color;
 // }
-
 .section-3 {
    padding: 4rem 0 4rem 0;
    @media (max-width: 991.9px) {
@@ -374,7 +372,7 @@ header {
          }
       }
    }
-   .swiper-wrapper {
+   .swiper-wrapper-1 {
       gap: 20px;
       @media (max-width: 1024.9px) {
          flex-direction: column;
@@ -468,7 +466,7 @@ header {
          }
       }
    }
-   .swiper-wrapper {
+  .swiper-wrapper-1 {
       gap: 25px;
       @media (max-width: 549.9px) {
          flex-wrap: wrap;
@@ -515,7 +513,7 @@ header {
    @media (max-width: 449.9px) {
       padding: 2rem 0 2rem 0;
    }
-   .swiper-wrapper {
+ .swiper-wrapper-1 {
       @media (max-width: 549.9px) {
          flex-direction: column;
          text-align: center;
@@ -616,7 +614,7 @@ header {
          }
       }
    }
-   .swiper-wrapper {
+ .swiper-wrapper-1 {
       gap: 25px;
       @media (max-width: 1024.9px) {
          flex-direction: column;
@@ -686,7 +684,7 @@ header {
          }
       }
    }
-   .swiper-wrapper {
+  .swiper-wrapper-1 {
       gap: 25px;
       justify-content: center;
       @media (max-width: 991.9px) {
@@ -802,7 +800,7 @@ header {
          }
       }
    }
-   .swiper-wrapper {
+.swiper-wrapper-1{
       gap: 25px;
       @media (max-width: 419.9px) {
          flex-direction: column;
@@ -861,7 +859,7 @@ header {
       padding: 3rem 0 1rem 0;
    }
 
-   .swipper-wrapper {
+ .swiper-wrapper-1{
       background-color: #f2bfaf;
       border-radius: $border-radius;
       @media (max-width: 549.9px) {
@@ -895,7 +893,7 @@ header {
 }
 .section-10 {
    padding: 3rem 0 6rem 0;
-   .swipper-wrapper {
+  .swiper-wrapper-1 {
       background-color: $colors;
       padding: 1rem 3rem;
       border-radius: $border-radius;
