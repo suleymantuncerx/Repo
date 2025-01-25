@@ -3,17 +3,24 @@ var swiper = new Swiper('.mySwiper', {
       el: '.swiper-pagination',
       clickable: true
    },
+
    autoplay: {
-      delay: 3000
+      delay: 3000,
+      disableOnInteraction: false,
+      pauseOnMouseEnter: true
    },
+
    breakpoints: {
-      300: {
+      0: {
          slidesPerView: 2
       },
-      600: {
+      540: {
          slidesPerView: 3
       },
-      1100: {
+      992: {
+         slidesPerView: 4
+      },
+      1200: {
          slidesPerView: 6
       }
    }

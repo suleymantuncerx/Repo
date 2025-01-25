@@ -25,6 +25,7 @@
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
       <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
       <link rel="stylesheet" href="style/style.css" />
    </head>
    <body>
@@ -67,16 +68,17 @@
       </section>
       <section class="section-2">
          <div class="container">
-            <hr />
-            <div class="image">
-               <a href="#"><img src="img/airbnb.png" alt="" /></a>
-               <a href="#"> <img src="img/google.png" alt="" /></a>
-               <a href="#"><img src="img/amazon.png" alt="" /></a>
-               <a href="#"> <img src="img/microsoft.png" alt="" /></a>
-               <a href="#"> <img src="img/fedex.png" alt="" /></a>
-               <a href="#"> <img src="img/hub.png" alt="" /></a>
+            <div class="swiper mySwiper">
+               <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="img/airbnb.png" alt="" /></div>
+                  <div class="swiper-slide"><img src="img/google.png" alt="" /></div>
+                  <div class="swiper-slide"><img src="img/amazon.png" alt="" /></div>
+                  <div class="swiper-slide"><img src="img/microsoft.png" alt="" /></div>
+                  <div class="swiper-slide"><img src="img/fedex.png" alt="" /></div>
+                  <div class="swiper-slide"><img src="img/hub.png" alt="" /></div>
+               </div>
+               <div class="swiper-pagination"></div>
             </div>
-            <hr />
          </div>
       </section>
       <section class="section-3">
@@ -428,5 +430,7 @@
             </div>
          </div>
       </footer>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script src="/Carousel-deneme/js/app.js"></script>
    </body>
 </html>

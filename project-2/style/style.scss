@@ -283,69 +283,78 @@ header {
       }
    }
 }
-hr {
-   display: flex;
-   border: 1px solid #d8d8d8;
-}
 .section-2 {
-   padding: 3rem 0 5rem 0;
-   @media (max-width: 991.9px) {
-      padding: 4rem 0 3rem 0;
-   }
-   @media (max-width: 549.9px) {
-      padding: 3rem 0 3rem 0;
-   }
-   @media (max-width: 449.9px) {
-      padding: 2rem 0 2rem 0;
-   }
-
-   .image {
-      padding: 3rem 0 3rem 0;
-      gap: 6rem;
-      display: flex;
-      @media (max-width: 1199.9px) {
-         overflow-y: hidden;
-         overflow-x: auto;
-         width: 100%;
-         gap: 7rem;
-      }
-      @media (max-width: 769.9px) {
-         gap: 3.5rem;
-      }
-      @media (max-width: 549.9px) {
-         gap: 2rem;
-      }
-      img {
-         height: 30px;
-         width: auto;
-         @media (max-width: 1199.9px) {
-            height: 35px;
-         }
-         @media (max-width: 991.9px) {
-            height: 23px;
-         }
-         @media (max-width: 769.9px) {
+   .swiper {
+      padding: 10rem 0 0 0;
+      .swiper-slide {
+         display: flex;
+         justify-content: center;
+         padding: 3rem 0;
+         img {
+            width: auto;
             height: 25px;
          }
-         @media (max-width: 439.9px) {
-            height: 15px;
-         }
       }
    }
-   ::-webkit-scrollbar-track {
-      -webkit-box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.3);
-      border-radius: 10px;
-      background-color: #f5f5f5;
-   }
-   ::-webkit-scrollbar {
-      background-color: transparent;
-      height: 7px;
-   }
-   ::-webkit-scrollbar-thumb {
-      border-radius: 10px;
-      background-color: $font-color;
-   }
 }
+// padding: 3rem 0 5rem 0;
+// @media (max-width: 991.9px) {
+//    padding: 4rem 0 3rem 0;
+// }
+// @media (max-width: 549.9px) {
+//    padding: 3rem 0 3rem 0;
+// }
+// @media (max-width: 449.9px) {
+//    padding: 2rem 0 2rem 0;
+// }
+
+// .image {
+//    padding: 3rem 0 3rem 0;
+//    gap: 6rem;
+//    display: flex;
+//    @media (max-width: 1199.9px) {
+//       overflow-y: hidden;
+//       overflow-x: auto;
+//       width: 100%;
+//       gap: 7rem;
+//    }
+//    @media (max-width: 769.9px) {
+//       gap: 3.5rem;
+//    }
+//    @media (max-width: 549.9px) {
+//       gap: 2rem;
+//    }
+//    img {
+//       height: 30px;
+//       width: auto;
+//       @media (max-width: 1199.9px) {
+//          height: 35px;
+//       }
+//       @media (max-width: 991.9px) {
+//          height: 23px;
+//       }
+//       @media (max-width: 769.9px) {
+//          height: 25px;
+//       }
+//       @media (max-width: 439.9px) {
+//          height: 15px;
+//       }
+//    }
+// }
+// ::-webkit-scrollbar-track {
+//    -webkit-box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.3);
+//    border-radius: 10px;
+//    background-color: #f5f5f5;
+// }
+// ::-webkit-scrollbar {
+//    background-color: transparent;
+//    height: 7px;
+// }
+// ::-webkit-scrollbar-thumb {
+//    border-radius: 10px;
+//    background-color: $font-color;
+// }
+
 .section-3 {
    padding: 4rem 0 4rem 0;
    @media (max-width: 991.9px) {
