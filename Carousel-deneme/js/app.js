@@ -5,5 +5,16 @@ var swiper = new Swiper('.mySwiper', {
    },
    autoplay: {
       delay: 3000
+   },
+   breakpoints: {
+      300: {
+         slidesPerView: 2
+      },
+      600: {
+         slidesPerView: 3
+      },
+      1100: {
+         slidesPerView: 6
+      }
    }
 });
