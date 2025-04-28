@@ -1,0 +1,477 @@
+/* RESPONSİVE */
+$pc: 1199.9px;
+$tablet: 991.9px;
+$mobile: 549.9px;
+
+/*FONT SİZE*/
+$font-p: 14px;
+$font-h1: 50px;
+
+/*COLOR*/
+$text-color: #fff;
+$titele-button-color: #24acac;
+
+*::after,
+::before {
+   box-sizing: border-box;
+}
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   list-style: none;
+   text-decoration: none;
+}
+body {
+   background: #122e44;
+   font-family: 'Roboto', sans-serif;
+}
+.d-flex {
+   display: flex;
+}
+.justify-content-center {
+   justify-content: center;
+}
+.justify-content-between {
+   justify-content: space-between;
+}
+.align-center {
+   align-items: center;
+}
+.w-100 {
+   width: 100%;
+}
+.container {
+   max-width: 1200px;
+   margin-left: auto;
+   margin-right: auto;
+   padding-left: 15px;
+   padding-right: 15px;
+}
+.title {
+   margin-bottom: 1rem;
+   h2 {
+      text-align: center;
+      color: $text-color;
+      font-size: 30px;
+      transition: all 0.5s ease-in-out;
+   }
+   :hover {
+      background-color: $titele-button-color;
+   }
+}
+/* header */
+header {
+   background: rgb(44, 37, 37);
+   border-bottom: 1px solid rgba(238, 238, 238, 0.801);
+   width: 100%;
+}
+.navbar {
+   padding: 15px 0;
+   @media (max-width: $pc) {
+      justify-content: center;
+   }
+}
+.logo {
+   a {
+      color: $text-color;
+      text-transform: uppercase;
+      @media (max-width: $mobile) {
+         font-size: 17px;
+      }
+   }
+   :hover {
+      color: $titele-button-color;
+   }
+}
+
+/* anasayfa */
+.section-1 {
+   padding: 5rem 0 7rem 0;
+   @media (max-width: $pc) {
+      flex-direction: column;
+   }
+   @media (max-width: $mobile) {
+      justify-content: center;
+   }
+   h1 {
+      font-size: 25px;
+      color: $titele-button-color;
+      @media (max-width: $mobile) {
+         font-size: 14px;
+      }
+   }
+   p {
+      font-size: 25px;
+      color: $text-color;
+      margin-bottom: 2rem;
+      @media (max-width: $mobile) {
+         font-size: 14px;
+      }
+   }
+   .left-column {
+      width: 50%;
+      @media (max-width: $pc) {
+         width: none;
+      }
+      @media (max-width: $mobile) {
+         margin-bottom: 2rem;
+      }
+   }
+   .right-column {
+      img {
+         width: 100%;
+         height: auto;
+         @media (max-width: $pc) {
+            width: 80%;
+         }
+      }
+   }
+}
+
+.section-2 {
+   gap: 25px;
+   padding: 3rem 0 7rem 0;
+   @media (max-width: $mobile) {
+      flex-direction: column;
+      justify-content: center;
+   }
+   .card {
+      width: 33%;
+      border: 3px solid #3f5565;
+      padding: 25px 20px;
+      @media (max-width: $mobile) {
+         width: 100%;
+      }
+      .card-header {
+         margin-bottom: 1rem;
+      }
+      .card-body {
+         font-size: 16px;
+         color: $text-color;
+         margin-bottom: 1rem;
+         @media (max-width: $pc) {
+            font-size: $font-p;
+         }
+      }
+      .card-footer {
+         font-size: 16px;
+         color: $text-color;
+         @media (max-width: $pc) {
+            font-size: $font-p;
+         }
+      }
+   }
+}
+.section-3 {
+   gap: 1rem;
+   padding: 3rem 0 7rem 0;
+   @media (max-width: $tablet) {
+      flex-wrap: wrap;
+   }
+   @media (max-width: $mobile) {
+      flex-direction: column;
+   }
+   .card {
+      width: 25%;
+      border: 3px solid #3f5565;
+      flex-direction: column;
+      padding: 15px 0;
+      @media (max-width: $tablet) {
+         width: 35%;
+      }
+      @media (max-width: $mobile) {
+         width: 100%;
+      }
+      .card-header {
+         margin-bottom: 1rem;
+         img {
+            width: auto;
+            height: 100px;
+            @media (max-width: $mobile) {
+               height: 50px;
+            }
+         }
+      }
+      .card-body {
+         gap: 15px;
+         margin-bottom: 1rem;
+         color: $text-color;
+         font-size: 16px;
+         @media (max-width: $mobile) {
+            font-size: $font-p;
+         }
+         ul {
+            display: flex;
+         }
+      }
+      .card-footer {
+         color: $text-color;
+         font-size: $font-p;
+      }
+   }
+}
+.section-4 {
+   padding: 3rem 0 7rem 0;
+   .home-page {
+      gap: 4rem;
+      @media (max-width: $tablet) {
+         flex-direction: column;
+      }
+      .left-column {
+         width: 50%;
+         @media (max-width: $tablet) {
+            width: inherit;
+            display: flex;
+            justify-content: center;
+         }
+         img {
+            width: 75%;
+            border-radius: 50px;
+            @media (max-width: $tablet) {
+               width: 50%;
+               justify-content: center;
+            }
+         }
+      }
+      .right-column {
+         gap: 3rem;
+         flex-wrap: wrap;
+         width: 50%;
+         @media (max-width: $tablet) {
+            width: inherit;
+            padding: 2rem 2rem;
+            justify-content: center;
+            align-items: center;
+         }
+
+         @media (max-width: $pc) {
+            gap: 2rem;
+         }
+         .single {
+            width: 40%;
+            flex-direction: column;
+            border-radius: 35px;
+            @media (max-width: $tablet) {
+               border-radius: 15px;
+               width: 60%;
+               padding: 2rem 0;
+            }
+
+            h1 {
+               font-size: 50px;
+               color: $text-color;
+               margin-bottom: 0.5rem;
+               @media (max-width: $pc) {
+                  font-size: 40px;
+               }
+               @media (max-width: $tablet) {
+                  font-size: 35px;
+               }
+            }
+            p {
+               font-size: 18px;
+               color: $text-color;
+               @media (max-width: $pc) {
+                  font-size: $font-p;
+               }
+               @media (max-width: $tablet) {
+                  font-size: 12px;
+               }
+            }
+         }
+      }
+   }
+}
+.section-5 {
+   gap: 5rem;
+   flex-wrap: wrap;
+   padding: 3rem 0 7rem 0;
+   @media (max-width: $pc) {
+      gap: 2.5rem;
+   }
+   .card {
+      width: 40%;
+      padding: 15px 50px;
+      @media (max-width: $mobile) {
+         width: 100%;
+      }
+      .card-header {
+         margin-bottom: 1rem;
+         img {
+            border-radius: 50%;
+         }
+      }
+      .card-body {
+         margin-bottom: 0.75rem;
+         p {
+            font-size: 15px;
+            margin-bottom: 0.5rem;
+            color: $text-color;
+         }
+         a {
+            font-size: 18px;
+            text-decoration: none;
+            color: $titele-button-color;
+            @media (max-width: $mobile) {
+               font-size: $font-p;
+            }
+            :hover {
+               color: #eaa023;
+            }
+         }
+      }
+      .card-footer {
+         color: $text-color;
+      }
+   }
+}
+.section-6 {
+   padding: 3rem 0 7rem 0;
+   .contact {
+      gap: 1rem;
+      @media (max-width: $pc) {
+         justify-content: center;
+      }
+      @media (max-width: $mobile) {
+         flex-direction: column;
+      }
+   }
+   .left-column {
+      width: 50%;
+      @media (max-width: $mobile) {
+         width: 100%;
+      }
+      img {
+         width: 95%;
+         height: auto;
+         border-radius: 50px;
+         @media (max-width: $pc) {
+            width: 85%;
+         }
+         @media (max-width: $mobile) {
+            width: 100%;
+         }
+      }
+   }
+   .right-column {
+      width: 50%;
+
+      @media (max-width: $pc) {
+         width: 35%;
+      }
+      @media (max-width: $mobile) {
+         width: 100%;
+      }
+      form {
+         padding: 50px 40px;
+         background: #2f363e;
+         border-radius: 5px;
+         border-radius: 25px;
+         input,
+         textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            background: #24292d;
+            border: none;
+            resize: none;
+            border-radius: 25px;
+            transition: 0.3s ease-in;
+            @media (max-width: $pc) {
+               width: 85%;
+            }
+            @media (max-width: $mobile) {
+               width: 100%;
+            }
+            :focus {
+               color: $text-color;
+            }
+         }
+      }
+   }
+}
+.footer {
+   background: #333434;
+   padding: 60px 0 20px 0;
+   color: $text-color;
+   .footer_social {
+      margin: 0 auto;
+      width: 80%;
+      margin-bottom: 3rem;
+      a {
+         color: $text-color;
+      }
+   }
+   .link {
+      @media (max-width: $mobile) {
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+      }
+      h3 {
+         font-size: 25px;
+         margin-bottom: 1.5rem;
+         @media (max-width: $mobile) {
+            font-size: 20px;
+         }
+         @media (max-width: $tablet) {
+            font-size: 17px;
+         }
+      }
+      .links {
+         flex-direction: column;
+         li {
+            margin-bottom: 15px;
+         }
+         a {
+            color: $text-color;
+            font-size: 18px;
+            @media (max-width: $tablet) {
+               font-size: 14px;
+            }
+         }
+      }
+      .contact {
+         li {
+            margin-bottom: 15px;
+            font-size: 20px;
+            @media (max-width: $tablet) {
+               font-size: 16px;
+            }
+            @media (max-width: $mobile) {
+               font-size: $font-p;
+            }
+         }
+      }
+   }
+   form {
+      display: flex;
+      flex-direction: column;
+      input {
+         padding: 8px;
+         margin-bottom: 20px;
+         border-radius: 25px;
+         background: #2f363e;
+         font-size: 13px;
+         border: none;
+         :focus {
+            color: $text-color;
+         }
+      }
+   }
+}
+.btn {
+   background: $titele-button-color;
+   padding: 12px 28px;
+   border-radius: 20px;
+   color: #fff;
+   border: 1px solid $titele-button-color;
+   font-weight: 700;
+   cursor: pointer;
+   transition: all 0.3s ease;
+}
+.btn:hover {
+   background: transparent;
+   letter-spacing: 2px;
+}
