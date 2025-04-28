@@ -421,6 +421,7 @@ header {
       }
       .links {
          flex-direction: column;
+         text-align: center;
          li {
             margin-bottom: 15px;
          }
@@ -433,6 +434,7 @@ header {
          }
       }
       .contact {
+         text-align: center;
          li {
             margin-bottom: 15px;
             font-size: 20px;
